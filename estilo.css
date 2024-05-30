@@ -1,0 +1,572 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3074f3;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+h3{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    color: #4e42fa;
+}
+.container {
+    width: 90%;
+    height: 60px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 1px solid #4e42fa;
+    background:#597fe7 ;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 60px; 
+}
+
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #2516f8;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.tabla {
+    width: 90%;
+    border-collapse: collapse;
+    font-size: 14px; 
+    margin: 0 auto;
+}
+
+.tabla th,
+.tabla td {
+    padding: 6px; 
+    text-align: center;
+}
+
+.tr1{
+    background-color: #3074f3; 
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tabla th {
+    background-color: #597fe7;
+}
+
+
+
+.tabla .tr2:hover {
+    background-color: #91acf7;
+}
+
+.tabla td {
+    border: 1px solid #3b197a;
+}
+
+
+#formularioClientes {
+    margin-top: 10px;
+    padding: 4px;
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#formularioClientes label {
+    margin-bottom: 6px; 
+}
+
+#formularioClientes input[type="text"] {
+    
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px; 
+}
+#formularioClientes input {
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+
+#formularioClientes input:focus {
+    border-color: #3074f3; 
+}
+#formularioClientes button {
+    background-color: #3074f3;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; 
+}
+#formularioClientes button:hover {
+    background-color: #5e94f7;
+}
+
+.formu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formu button {
+    background-color: #4e42fa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formu button:hover {
+    background-color: #6459f8;
+}
+
+#formularioEmpleados {
+    margin-top: 10px;
+    padding: 4px; 
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#formularioEmpleados label {
+    margin-bottom: 6px; 
+}
+
+#formularioEmpleados input[type="text"],
+#formularioEmpleados  input[type="date"] {
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+
+#formularioEmpleados input:focus {
+    border-color: #3074f3; 
+}
+#formularioEmpleados button {
+    background-color: #3074f3;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#formularioEmpleados button:hover {
+    background-color: #5e94f7;
+}
+
+
+#formularioCatalogo {
+    margin-top: 10px;
+    padding: 4px; 
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#formularioCatalogo label {
+    margin-bottom: 6px; 
+}
+
+#formularioCatalogo input[type="text"] {
+    
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px;
+}
+#formularioCatalogo input {
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+
+#formularioCatalogo input:focus {
+    border-color: #3074f3; 
+}
+#formularioCatalogo button {
+    background-color: #3074f3;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#formularioCatalogo button:hover {
+    background-color: #5e94f7;
+}
+
+
+#formularioCatalogo input[type="file"]:focus {
+    border-color: #3074f3; 
+    outline: none;
+}
+
+#formularioprovedores {
+    margin-top: 10px;
+    padding: 4px; 
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#formularioprovedores label {
+    margin-bottom: 6px; 
+}
+
+#formularioprovedores input[type="text"] {
+    
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px;
+}
+#formularioprovedores input {
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+
+#formularioprovedores input:focus {
+    border-color: #3074f3; 
+}
+#formularioprovedores button {
+    background-color: #3074f3;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#formularioprovedores button:hover {
+    background-color: #5e94f7;
+}
+
+#formularioFactura {
+    margin-top: 10px;
+    padding: 4px; 
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#formularioFactura label {
+    margin-bottom: 6px; 
+}
+
+#formularioFactura input[type="text"] {
+    
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px;
+}
+#formularioFactura input[type="text"],
+#formularioFactura select,
+#formularioFactura input[type="date"] {
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+
+#formularioFactura input:focus {
+    border-color: #3074f3; 
+}
+#formularioFactura button {
+    background-color: #3074f3;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#formularioFactura button:hover {
+    background-color: #5e94f7;
+}
+
+#formularioFacturapro {
+    margin-top: 10px;
+    padding: 4px; 
+    width: 700px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#formularioFacturapro label {
+    margin-bottom: 6px; 
+}
+
+#formularioFacturapro input[type="text"],
+#formularioFacturapro select {
+    width: calc(50% - 16px); 
+    padding: 6px; 
+    margin-bottom: 6px; 
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+#formularioFacturapro input {
+    border-radius: 6px;
+    border: 1px solid;
+    outline: none; 
+}
+
+#formularioFacturapro input:focus {
+    border-color: #3074f3; 
+}
+#formularioFacturapro button {
+    background-color: #3074f3;
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; 
+}
+
+
+#formularioFacturapro button:hover {
+    background-color: #5e94f7;
+}
+
+
+@media (max-width: 768px) {
+    #formularioFactura, #formularioClientes,#formularioCatalogo, #formularioEmpleados,#formularioFacturapro, #formularioprovedores {
+        width: 90%; 
+        max-width: 100%; 
+    }
+
+    #formularioFactura,#formularioFacturapro,#formularioClientes, #formularioCatalogo, #formularioEmpleados,  #formularioprovedores input[type="text"],
+    #formularioFactura,#formularioEmpleados input[type="date"],
+    #formularioFactura, #formularioFacturapro select {
+        width: calc(100% - 12px); 
+    }
+
+    #formularioFactura button {
+        width: 100%; /* Botón ocupa el ancho completo */
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background-color: #3074f3;
+        color: #fff;
+        padding: 20px 40px;
+        text-align: center;
+    }
+    
+    h3 {
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        color: #4e42fa;
+    }
+    
+    .container {
+        width: 80%;
+        height: 500px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        border: 1px solid #4e42fa;
+        background: #597fe7;
+        border-radius: 10px;
+        margin: 20px auto;
+        align-items: center;
+        margin-top: 60px;
+        top: 100%;
+        margin-left: 40px;
+        
+    }
+    
+    .menu {
+        height: 60%;
+        list-style: none;
+        padding:30px;
+        font-size: 15px;
+        align-items: flex;
+        flex-direction: column;
+        display: initial;
+        position: absolute;
+        margin-top: 200px;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 90;
+    }
+    
+    .menu li {
+        margin: 0;
+    }
+    
+    .menu a {
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .menu a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #2516f8;
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+    
+    .menu a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    .tabla {
+        width: 40%;
+        border-collapse: collapse;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    
+    .tabla th,
+    .tabla td {
+        padding: 6px;
+        text-align: center;
+    }
+    
+    .tr1 {
+        background-color: #3074f3;
+        color: #fff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .tabla th {
+        background-color: #597fe7;
+    }
+    
+    .tabla .tr2:hover {
+        background-color: #91acf7;
+    }
+    
+    .tabla td {
+        border: 1px solid #3b197a;
+    }
+    
+    .formu {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .formu button {
+        background-color: #4e42fa;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .formu button:hover {
+        background-color: #6459f8;
+    }
+}
+
+/* Estilos generales */
